@@ -1,8 +1,30 @@
 // display sections on clicking on the link
 function displaySection(link,section){
     let lnk = document.querySelector(`#${link}`);
+    let sec = document.querySelector(`#${section}`);
     lnk.onclick = (event) => {
-       
+        const mq = window.matchMedia("(max-width: 500px)");
+        
+        if(mq.matches) {
+            lnk.parentElement.style.display = "none";
+            if(section == "skills-section") {
+                let div = document.querySelector(`#${section} > article`);
+                div.style.display = "flex";
+                div.style.flexDirection = "column";
+                let subElement = document.querySelectorAll(`#${section} li`);
+                for (se of subElement){
+                    se.style.fontFamily = "roboto mono";
+                }
+                
+            } else if(section == "projects-section") {
+                let s = document.querySelector("#projects-wrapper");
+                console.log(s);
+                s.style.display = "flex";
+                s.style.flexDirection = "column";
+                
+            }
+        }
+        
         let jiran = lnk.parentElement.children;
         for(j of jiran){
             j.classList.remove("active");
@@ -10,10 +32,10 @@ function displaySection(link,section){
         
         event.preventDefault() ; 
         lnk.classList.add("active");
-        let sec = document.querySelector(`#${section}`);
+       
 
         for(elem of sec.parentElement.children){
-            elem.style.display ="none";
+            elem.style.display = "none";
         }
         sec.classList.remove("section");
         sec.style.display = "block";
@@ -74,6 +96,7 @@ function switchDarkLightMode() {
     }
 }
   
+
 
 switchDarkLightMode();
 displaySection("about-me","about-me-section");

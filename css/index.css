@@ -1,3 +1,13 @@
+@import url("mobile.css");
+@font-face {
+    font-family: poppins;
+    src:url(../fonts/Poppins-Medium.ttf),
+        url(../fonts/Poppins-Regular.ttf),
+        url(../fonts/Poppins-Bold.ttf);
+
+}
+
+
 :root{
     --background-color: #fafafa;
     --text-color:#333 ; 
@@ -120,6 +130,7 @@ a {
 }
 #name {
     animation-name: name;
+    font-family: "poppins-bold";
     animation-duration: 1.7s;
     animation-timing-function: ease-out;
     color: var(--text-title-color);
