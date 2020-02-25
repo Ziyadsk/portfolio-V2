@@ -162,7 +162,7 @@ a {
 }
 
 #menu a {
-  font-family : sf mono ;
+  font-family : "roboto mono" ;
   font-size: 0.9em ;
   font-weight: light;
   margin-right: 3em;
@@ -293,7 +293,7 @@ article > section > ul {
     opacity: 0.5;
     padding: 0.3em ;
     border-radius: 5px ;
-    font-family: roboto mono;
+    font-family: "roboto mono";
 }
 .tags > span:hover{
     opacity: 0.9;
