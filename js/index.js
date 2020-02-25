@@ -12,15 +12,16 @@ function displaySection(link,section) {
         if(mq.matches) {
             // show the go-back button when a link is clicked in responsive mode . 
             let goBackButton = document.querySelector("#go-back-button");
-
-            
             goBackButton.style.display = "block";
+
+            // when the go-back button is clicked , it disappears with the main and the menu should reapear .
             goBackButton.addEventListener("click",() => {
-                let mainSection = document.querySelector("main");
-                mainSection.style.display = "none";
+                // hide the mainSection
+                sec.style.display = "none";       
                 let menu = document.querySelector("#menu");
                 menu.style.display = "flex";
                 goBackButton.style.display = "none";
+                lnk.classList.remove("active");
          
             });
 
