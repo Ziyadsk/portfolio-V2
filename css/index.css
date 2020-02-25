@@ -1,13 +1,20 @@
 @import url("mobile.css");
 @font-face {
-    font-family: poppins;
+    font-family: "poppins";
     src:url(../fonts/Poppins-Medium.ttf),
         url(../fonts/Poppins-Regular.ttf),
         url(../fonts/Poppins-Bold.ttf);
 
 }
+@font-face {
+    font-family: "poppins-bold";
+    src : url(../fonts/Poppins-Bold.ttf);
+}
 
-
+@font-face {
+    font-family: "roboto mono";
+    src:url(../fonts/RobotoMono-Regular.ttf);
+}
 :root{
     --background-color: #fafafa;
     --text-color:#333 ; 
@@ -210,6 +217,7 @@ section h2 {
     margin-left: 1em;
 }
 #links-section > div > * {
+    min-width: max-content;
     opacity: 0.5;
     margin-right: 2em ;
     font-weight: 700;
@@ -326,3 +334,8 @@ footer {
     position: absolute;
     bottom: 0px ;
 }
+
+
+#go-back-button{
+    display: none; 
+} 

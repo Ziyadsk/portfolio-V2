@@ -1,12 +1,30 @@
 // display sections on clicking on the link
-function displaySection(link,section){
+function displaySection(link,section) {
+    // link and the section to show
     let lnk = document.querySelector(`#${link}`);
     let sec = document.querySelector(`#${section}`);
+    
+    // when you click on one of the links
     lnk.onclick = (event) => {
-        const mq = window.matchMedia("(max-width: 500px)");
         
+        // mobile js
+        const mq = window.matchMedia("(max-width: 500px)");
         if(mq.matches) {
-            lnk.parentElement.style.display = "none";
+            // show the go-back button when a link is clicked in responsive mode . 
+            let goBackButton = document.querySelector("#go-back-button");
+
+            
+            goBackButton.style.display = "block";
+            goBackButton.addEventListener("click",() => {
+                let mainSection = document.querySelector("main");
+                mainSection.style.display = "none";
+                let menu = document.querySelector("#menu");
+                menu.style.display = "flex";
+                goBackButton.style.display = "none";
+         
+            });
+
+            lnk.parentElement.style.display = "none"; 
             if(section == "skills-section") {
                 let div = document.querySelector(`#${section} > article`);
                 div.style.display = "flex";
@@ -18,11 +36,20 @@ function displaySection(link,section){
                 
             } else if(section == "projects-section") {
                 let s = document.querySelector("#projects-wrapper");
-                console.log(s);
+
                 s.style.display = "flex";
                 s.style.flexDirection = "column";
-                
+
+            }else if (section == "links-section") {
+                let linkWrapper = document.querySelector(`#${section} div`);
+                linkWrapper.style.display = "flex";
+                linkWrapper.style.flexDirection = "column";
+
             }
+            sec.classList.remove("section");
+            sec.style.display = "block";
+            sec.style.animationName = "section";
+            sec.style.animationDuration = "1.2s";
         }
         
         let jiran = lnk.parentElement.children;
