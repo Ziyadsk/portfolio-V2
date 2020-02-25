@@ -1,0 +1,317 @@
+:root{
+    --background-color: #fafafa;
+    --text-color:#333 ; 
+    --text-title-color:#111;
+    --text-hover-color : #000 ; 
+    --light-accent-color : #ccc ; 
+    --accent-color :#abbaab; 
+    --blue-color :#87aa88;
+}
+
+@keyframes name {
+    0%{
+        opacity: 0;
+        transform: translateY(+100em);
+    }
+    50% {
+        transform: translateY(-1em);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+
+}
+@keyframes slogan {
+    0% {
+        opacity: 0;
+        transform: translateX(-100em);
+    }
+    60% {
+        font-size: 0.8em ;
+    }
+    100%{
+        
+        opacity: 1;
+        transform: translateY(-2em);
+        font-size: 1em ;
+    }
+
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+        transform: translateY(+100em);
+    }
+    50% {
+        opacity: 0.2;
+        transform: translateY(+50em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY((0em));
+    }
+
+}
+
+@keyframes ldIcon {
+    0% {
+        opacity: 0;
+        transform: translateY(-100em);
+    }
+    50% {
+        opacity: 0.2;
+        transform: translateY(-50em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY((0em));
+    }
+}
+@keyframes section {
+    0%{
+        opacity: 0;
+        transform: translateY(+100em);
+    }
+    50% {
+        transform: translateY(-2em);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+
+}
+@keyframes skillSection {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(+200px);
+    }
+}
+
+* {
+    font-family: "poppins";
+}
+html {
+    background-color: var(--background-color);
+}
+body {
+    color:var(--text-color);
+    width:75%; 
+    margin :5em auto ; 
+    background-color: var(--background-color);
+}
+
+a { 
+    color : inherit;
+    text-decoration: none;
+}
+#name {
+    animation-name: name;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-out;
+    color: var(--text-title-color);
+}
+
+#slogan {
+    animation-name:slogan; 
+    animation-duration: 1.2s ;
+    animation-timing-function: ease-in-out;
+    font-weight: bold;
+    animation-fill-mode: forwards;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    color :gray ; 
+    animation-name: menu ; 
+    animation-duration: 0.8s;
+    animation-timing-function:ease-out;
+}
+
+#menu a {
+  font-family : sf mono ;
+  font-size: 0.9em ;
+  font-weight: light;
+  margin-right: 3em;
+}
+#menu a:hover {
+    color: var(--text-hover-color); 
+}
+
+#switch-container img {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    animation: ldIcon;
+    animation-duration: 1.5s;
+}
+#about-me-section{
+    width:75% ;
+    line-height: 1.7em;
+}
+section h2 {
+    color:var(--text-title-color);
+}
+#about-me-section a{
+    display: inline-block;
+    padding: 1em;
+    box-shadow: 0px 0px 3px 1px var(--light-accent-color);
+    margin: 1em 0em 0em 0em;
+    opacity: 0.7;
+    
+}
+#about-me-section a:hover{
+    box-shadow: 0px 0px 7px 1px var(--light-accent-color);
+    opacity: 1;
+}
+
+.section {
+    display:none;
+}
+
+.visible {
+    display:block; 
+}
+#header-name-ldm{
+    display: flex;    
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#links-section > div {
+    margin-top: 3em;
+    margin-left: 1em;
+}
+#links-section > div > * {
+    opacity: 0.5;
+    margin-right: 2em ;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#links-section > div > *:hover {
+    opacity: 1;
+}
+
+article { 
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section h4 {
+        font-weight: bolder;
+        color:var(--text-hover-color);
+}
+article > section > ul {
+
+    list-style-type: none;
+    font-size: 0.9em ;
+    padding-left: 1em;
+    margin: -1em 0em 1em 0em ;
+}
+
+#projects-wrapper {
+    display: flex;
+    margin-top:2em;
+}
+
+#projects-wrapper > div {
+    background-color: inherit;
+    padding: 0 1em ;
+    box-shadow: 0px 0px 5px 3px var(--light-accent-color);
+    display: flex;
+    align-items: stretch;
+    margin-right: 5em ;
+}
+#projects-wrapper > div > div {
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 2em;
+}
+#projects-wrapper > div h3 em {
+    font-size: 0.7em;
+    font-weight: 400;
+    word-wrap: none;
+    white-space: nowrap;
+}
+#projects-wrapper > div h3 a:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+    position: relative;
+    top:-2px ; 
+}
+#projects-wrapper img{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em 1em 1em 2em ;
+    box-shadow: 0px 0px 5px 3px var(--light-accent-color);
+}
+.tags {
+    display: flex ; 
+    flex-direction: column; 
+}
+.tags > span {
+    margin-right: 1em ;
+    font-size: 0.7em ;
+    opacity: 0.5;
+    padding: 0.3em ;
+    border-radius: 5px ;
+    font-family: roboto mono;
+}
+.tags > span:hover{
+    opacity: 0.9;
+}
+#projects-wrapper > div > span {
+    border:1px solid #ccc; 
+    text-align: center ;
+    width: 50%;
+    margin: 1em auto;
+}
+
+#links-section > div{
+    height: 1em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+
+}
+
+#links-section > div > *{
+    margin-top: 1em;
+}
+
+#links-section > div a i {
+    color:var(--text-color); 
+    margin-right: 0.5em;
+    opacity: 1;
+}
+
+.active > * {
+
+    color:azure;
+    background-color: var(--blue-color);
+    padding: 0.5em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px ;
+}

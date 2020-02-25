@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fontawesome-free-5.12.1-web/css/all.css" >
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/z-icon.ico" type="image/x-icon">
+    <title>Ziyad</title>
+</head>
+
+<body>
+    <div id="header-name-ldm">
+        <h1 id="name">Ziyad</h1>
+        <span id="switch-ldm-logo">
+            <div id="switch-container">
+                <img src="images/moon.svg" alt="">
+                
+            </div>
+        </span>
+    </div>
+
+    <p id="slogan">Software engineer</p>
+     
+    <!-- menu -->
+    <header id="menu">
+        <p id="about-me"> <a href="">About Me</a> </p>
+        <p id="skills"> <a href="">Skills</a> </p>
+        <p id="projects"> <a href="">Projects</a> </p>
+        <p id="links"> <a href="">Links</a> </p>
+
+    </header> 
+    <main>
+    <!-- About me -->
+    <section id="about-me-section" class="section">
+			<h2>About me</h2>
+			<p>- I am a Full Stack Web Developer from Mauritania. I have a passion for creating seamless,beautiful and creative websites, I have experience with various programming languages and specifically web technologies. Life is a continuous learning process, so work makes me more rigorous. I am currently available to hire.<br>
+			<a href="mailto:ziyadkader@gmail.com"> Get in touch</a></p>
+    </section>
+    
+    <!-- Skills -->
+    <section id="skills-section" class="section">
+        <H2>Skills</H2>
+        <article>
+            <section>                                                                                                                               
+                <h4>Programmings languages</h4>
+                <ul>
+                    <li skill-description="PHP"><img src="" alt="">PHP</li>
+                    <li skill-description="Java"><img src="" alt="">Java</li> 
+                    <li skill-description="Python"><img src="" alt="">Python</li>
+                    <li skill-description="Go"><img src="" alt="">Go</li>
+                    <li skill-description="Javascript"><img src="" alt="">Swift</li>
+                    <li skill-description="Javascript"><img src="" alt="">JavaScript</li>
+                    <li skill-description="Javascript"><img src="" alt="">Haskell</li>
+                </ul>
+                
+            </section>
+            <section>
+                <h4>Frontend Technologies</h4>
+                <ul>
+                    <li skill-description="HTML 5"><img src="" alt="">HTML</li>
+                    <li skill-description="CSS"><img src="" alt="">CSS</li>
+                    <li skill-description="Sass"><img src="">React</li>
+                    <li skill-description="Bootstrap"><img src="" alt="">Bootstrap</li>
+                    <li skill-description="JQuery"><img src="" alt="">Jquery</li>
+                    <li skill-description="Sass"><img src="">Sass</li>
+                </ul>
+            </section> 
+            
+            <section>
+                <h4>Backend Technologies</h4>
+                <ul>
+                    <li skill-description="Laravel"><img src="" alt="">Laravel</li>
+                    <li skill-description="Django"><img src="" alt="">Django</li>
+                    <li skill-description="Flask"><img src="" alt="">Flask</li>
+                </ul>
+                
+            </section>
+    
+            <section>
+                <h4>Databases</h4>
+                <ul>
+                    <li  skill-description="Mysql"><img src="" alt="">Mysql</li>
+                    <li  skill-description="Oracle"><img src="" alt="">Oracle</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Other tools</h4>
+                <ul>
+                    <li skill-description="Git"><img src="" alt="">Git</li>
+                    <li skill-description="Github"><img src="" alt="">Github</li>
+                    <li  skill-description="Visual Studio Code"><img src="" alt="">VScode</li>
+                    <li  skill-description="Terminal"><img src="" alt="">Unix Shells (Bash/zsh)</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Human languages</h4>
+                <ul>
+                    <li>English</li>
+                    <li>French</li>
+                    <li>Arabic</li>
+                </ul>
+            </section>
+        </article>
+        
+    </section>
+    
+    <section id="projects-section" class="section">
+        <!-- will add tags to each project-->
+        <div id="projects-wrapper">
+        <div>
+            <div>
+            <h3> 
+                <a href="https://kaytouki.com" target="_blank">Kaytouki.com</a>
+                <br>
+                <em> - Carpooling website</em>   
+            </h3>        
+           
+            <div class="tags">
+                <span>PHP</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Mysql</span>
+            </div>
+            </div>
+            <img src="images/kaytouki.png" alt="">
+      
+        </div>
+        <div>
+            <div>
+            <h3> <a href="https://logorain.com" target="_blank">Logorain.com </a>
+                <br>
+                <em>- Logos Generator</em>
+            </h3>
+           
+            <div class="tags">
+                <span>Python</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Django</span>
+                <span>Javascript</span>
+            </div>
+            </div>
+            <img src="images/logorain.png" alt="">
+         
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Links -->
+    <section id="links-section" class="section">
+
+        <h2>Links</h2>
+        <div>
+            <a href="mailto:ziyadkader@gmail.com" description="Mail"><i class="fas fa-envelope" onmouseover='displayDescriptionOnLinks("fa-envelope");'></i>
+                mail</a>
+
+            <a href="https://www.linkedin.com/in/ziyadsk/" description="Linkedin"><i class="fab fa-linkedin-in"  onmouseover='displayDescriptionOnLinks("fa-linkedin-in");'> </i>
+                linkedin</a>
+      
+                <a href="https://github.com/ziyadsk" description="Github"><i class="fab fa-github" onmouseover='displayDescriptionOnLinks("fa-github");'></i>
+                    github</a>
+                <a href="https://stackoverflow.com/users/6744380/ziyadsk" description="StackOverflow"><i class="fab fa-stack-overflow" onmouseover='displayDescriptionOnLinks("fa-stack-overflow");'></i>
+                    stackoverflow</a>
+            <a href="https://www.facebook.com/Ziyad.abdelkader" description="Facebook"><i class="fab fa-facebook"  onmouseover='displayDescriptionOnLinks("fa-facebook");';>
+          
+            </i>  facebook</a>
+            <a href="https://twitter.com/SkZiyad" description="Twitter"><i class="fab fa-twitter"  onmouseover='displayDescriptionOnLinks("fa-twitter");'></i>
+                twitter</a>
+     
+     
+        </div>
+    </div>
+    
+    </section>
+</main>
+
+<script src="js/index.js">
+</script> 
+
+</body>
+
+</html>
