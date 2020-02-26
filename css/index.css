@@ -213,7 +213,6 @@ section h2 {
 }
 
 #links-section > div {
-    margin-top: 3em;
     margin-left: 1em;
 }
 #links-section > div > * {
@@ -313,7 +312,7 @@ article > section > ul {
 
 }
 
-#links-section > div > *{
+#links-section > div > * {
     margin-top: 1em;
 }
 
