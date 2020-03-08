@@ -119,7 +119,7 @@
 }
 
 * {
-    font-family: "poppins","helvetica","arial";
+    font-family: "poppins","helvetica",arial;
 }
 html {
     background-color: var(--background-color);
@@ -162,7 +162,7 @@ a {
 }
 
 #menu a {
-  font-family : "roboto mono" ;
+  font-family : "roboto mono",monospace ;
   font-size: 0.9em ;
   font-weight: light;
   margin-right: 3em;
