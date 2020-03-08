@@ -137,7 +137,7 @@ a {
 }
 #name {
     animation-name: name;
-    font-family: "poppins-bold";
+    font-family: "poppins-bold" , helvetica , arial;
     animation-duration: 1.7s;
     animation-timing-function: ease-out;
     color: var(--text-title-color);
