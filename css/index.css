@@ -1,20 +1,4 @@
 @import url("mobile.css");
-@font-face {
-    font-family: "poppins";
-    src:url(../fonts/Poppins-Medium.ttf),
-        url(../fonts/Poppins-Regular.ttf),
-        url(../fonts/Poppins-Bold.ttf);
-
-}
-@font-face {
-    font-family: "poppins-bold";
-    src : url(../fonts/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: "roboto mono";
-    src:url(../fonts/RobotoMono-Regular.ttf);
-}
 :root{
     --background-color: #fafafa;
     --text-color:#333 ; 
@@ -137,7 +121,8 @@ a {
 }
 #name {
     animation-name: name;
-    font-family: "poppins-bold" , helvetica , arial;
+    font-weight: bold;
+    font-family: "poppins" , helvetica , arial;
     animation-duration: 1.7s;
     animation-timing-function: ease-out;
     color: var(--text-title-color);
