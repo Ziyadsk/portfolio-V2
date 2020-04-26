@@ -188,16 +188,22 @@ section {
 section h2 {
     color:var(--text-title-color);
 }
-#about-me-section a{
+#about-me-section a {
     display: inline-block;
     padding: 1em;
     box-shadow: 0px 0px 3px 1px var(--light-accent-color);
     margin: 1em 0em 0em 0em;
     opacity: 0.7;
+    box-shadow: 10px 10px 0px 5px ,
+    0px 0px 0px 5px  ;
     
 }
-#about-me-section a:hover{
-    box-shadow: 0px 0px 7px 1px var(--light-accent-color);
+#about-me-section a:hover {
+    transition:all 0.4s ; 
+    color:var(--background-color);
+    background-color: var(--blue-color);
+    box-shadow: 0px 0px 2px 0px ,
+    3px 3px 0px 3px  ;
     opacity: 1;
 }
 
@@ -254,16 +260,19 @@ article > section > ul {
 #projects-wrapper > div {
     background-color: var(--background-color);
     padding: 0 1em ;
-    box-shadow: 0px 0px 5px 3px var(--light-accent-color);
     display: flex;
     align-items: stretch;
     margin-right: 5em ;
+    box-shadow: 0px 0px 0px 5px var(--light-accent-color),
+    15px 15px 0px 5px var(--light-accent-color) ;
 }
+
 #projects-wrapper > div > div {
     display: flex ;
     flex-direction: column;
     justify-content: space-evenly;
     padding-right: 2em;
+    
 }
 #projects-wrapper > div h3 em {
     font-size: 0.7em;
@@ -280,10 +289,12 @@ article > section > ul {
 #projects-wrapper img{
     width: 200px;
     height: 300px;
-    border-radius: 5px;
     padding: 1em;
     margin: 1em 1em 1em 2em ;
-    box-shadow: 0px 0px 5px 3px var(--light-accent-color);
+    opacity: 0.8;  
+    box-shadow: 2px 2px 0px 4px rgba(240,240,240,0.5),
+    -2px -2px 0px 0px var(--light-accent-color);
+
 }
 .tags {
     display: flex ; 
