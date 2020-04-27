@@ -266,6 +266,11 @@ article > section > ul {
     box-shadow: 0px 0px 0px 5px var(--light-accent-color),
     15px 15px 0px 5px var(--light-accent-color) ;
 }
+#projects-wrapper > div:hover { 
+    box-shadow: 0px 0px 0px 5px ,
+    0px 0px 0px 5px  ;
+    transition: all 0.4s;
+}
 
 #projects-wrapper > div > div {
     display: flex ;
