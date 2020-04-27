@@ -8,6 +8,7 @@
     body {
         position: relative;
         top:-4em;
+        width:85% !important; 
     }
 
     #projects-wrapper {
