@@ -316,7 +316,6 @@ article > section > ul {
     opacity: 0.8;  
     box-shadow: 2px 2px 0px 4px rgba(240,240,240,0.5),
     -2px -2px 0px 0px var(--light-accent-color);
-
 }
 .tags {
     display: flex ; 
