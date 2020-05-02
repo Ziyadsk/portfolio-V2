@@ -8,7 +8,17 @@
     --accent-color :#abbaab; 
     --blue-color :#2980b9;
 }
-
+@keyframes first-about-me-animation{
+    0%{ 
+        transform: translateY(+10em);    
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+       transform: translateY(-1em);    
+    }
+    
+}
 @keyframes name {
     0%{
         opacity: 0;
@@ -120,9 +130,10 @@ a {
     text-decoration: none;
 }
 section {
+    
     border-radius: 1em;
     padding: 1em;
-    background-color: var(--background-color);
+    background-color: transparent;
 }
 #watermark {
     position: fixed;
@@ -207,10 +218,16 @@ section h2 {
     opacity: 1;
 }
 
-.section {
+.section:not(:first-child){
     display:none;
 }
 
+.section:first-child{
+    animation-name: first-about-me-animation;
+    animation-duration:1s;
+    animation-timing-function:ease-in; 
+    animation-fill-mode: forwards;
+}
 .visible {
     display:block; 
 }
