@@ -48,8 +48,27 @@ function displaySection(link,section) {
             }
             sec.classList.remove("section");
             sec.style.display = "block";
-            sec.style.animationName = "section";
+            sec.style.animationName = "section-mobile";
             sec.style.animationDuration = "1.2s";
+        } else {
+            
+            // remove the section from sight
+            for(elem of sec.parentElement.children){
+                elem.style.display = "none";
+            }
+
+            sec.classList.remove("section");
+            sec.style.display = "block";
+            sec.style.animationName = "section";
+            sec.style.animationDuration = "0.6s";
+            sec.style.animationFillMode = "forwards";
+            
+            let menu = document.querySelector("#menu");
+            menu.style.display = "flex";
+            menu.style.transform = "translate(23em,-8em)";
+            menu.style.transition = "All 1s";
+            event.preventDefault() ;
+            lnk.classList.add("active");
         }
         
         let jiran = lnk.parentElement.children;
@@ -57,21 +76,9 @@ function displaySection(link,section) {
             j.classList.remove("active");
         }
 
-        // move the menu when any of its item is clicked
-        let menu = document.querySelector("#menu");
-        menu.style.transform = "translate(23em,-8em)";
-        menu.style.transition = "All 1s";
-        event.preventDefault() ; 
-        lnk.classList.add("active");
-       
-        for(elem of sec.parentElement.children){
-            elem.style.display = "none";
-        }
-        sec.classList.remove("section");
-        sec.style.display = "block";
-        sec.style.animationName = "section";
-        sec.style.animationDuration = "1.2s";
-        sec.style.animationFillMode = "forwards";
+            event.preventDefault() ; 
+            lnk.classList.add("active");
+
     };
 }
 

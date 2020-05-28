@@ -1,4 +1,14 @@
 @media only screen and (max-width: 600px) {
+    @keyframes section-mobile {
+        0%{
+            opacity: 0  !important;
+            transform: translateY(+20rem)  !important;
+        }
+        100% {
+            transform: translateY(-20rem)  !important;
+        }
+    }
+    
     #menu {
         display: flex;
         flex-direction: column !important;
@@ -22,6 +32,11 @@
         margin: 0em 0em 1em 0em !important;
         width: 97% important;
         
+    }
+    
+    .section{
+        display: none;
+        margin-top: 10em !important;
     }
 
     #projects-wrapper img {

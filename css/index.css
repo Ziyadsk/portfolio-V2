@@ -87,10 +87,10 @@
 @keyframes section {
     0% {
         opacity: 0;
-        transform: translateY(+10em);
+        transform: translateY(20rem);
     }
     100% {
-        transform: translateY(-7em);
+        transform: translateY(-5rem);
     }
 }
 @keyframes skillSection {
@@ -126,7 +126,6 @@ a {
 }
 
 section {
-    padding: 1em;
     background-color: transparent;
 }
 
@@ -232,6 +231,7 @@ section h2 {
     animation-duration:1s;
     animation-timing-function:ease-in; 
     animation-fill-mode: forwards;
+    margin-top: 2em;
 }
 .visible {
     display:block; 
