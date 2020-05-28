@@ -24,7 +24,6 @@ function displaySection(link,section) {
                 lnk.classList.remove("active");
          
             });
-
             lnk.parentElement.style.display = "none"; 
             if(section == "skills-section") {
                 let div = document.querySelector(`#${section} > article`);
@@ -35,13 +34,13 @@ function displaySection(link,section) {
                     se.style.fontFamily = "roboto mono";
                 }
                 
-            } else if(section == "projects-section") {
+            } else if (section == "projects-section") {
                 let s = document.querySelector("#projects-wrapper");
 
                 s.style.display = "flex";
                 s.style.flexDirection = "column";
 
-            }else if (section == "links-section") {
+            } else if (section == "links-section") {
                 let linkWrapper = document.querySelector(`#${section} div`);
                 linkWrapper.style.display = "flex";
                 linkWrapper.style.flexDirection = "column";
@@ -57,11 +56,14 @@ function displaySection(link,section) {
         for(j of jiran){
             j.classList.remove("active");
         }
-        
+
+        // move the menu when any of its item is clicked
+        let menu = document.querySelector("#menu");
+        menu.style.transform = "translate(23em,-8em)";
+        menu.style.transition = "All 1s";
         event.preventDefault() ; 
         lnk.classList.add("active");
        
-
         for(elem of sec.parentElement.children){
             elem.style.display = "none";
         }
@@ -69,6 +71,7 @@ function displaySection(link,section) {
         sec.style.display = "block";
         sec.style.animationName = "section";
         sec.style.animationDuration = "1.2s";
+        sec.style.animationFillMode = "forwards";
     };
 }
 

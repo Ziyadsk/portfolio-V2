@@ -83,20 +83,15 @@
         transform: translateY((0em));
     }
 }
+
 @keyframes section {
-    0%{
+    0% {
         opacity: 0;
-        transform: translateY(+100em);
-    }
-    50% {
-        transform: translateY(-2em);
-        opacity: 0.3;
+        transform: translateY(+10em);
     }
     100% {
-        opacity: 1;
-        transform: translateY(0em);
+        transform: translateY(-7em);
     }
-
 }
 @keyframes skillSection {
     0%{
@@ -129,12 +124,12 @@ a {
     color : inherit;
     text-decoration: none;
 }
+
 section {
-    
-    border-radius: 1em;
     padding: 1em;
     background-color: transparent;
 }
+
 #watermark {
     position: fixed;
     margin: 0em auto ;
@@ -179,10 +174,20 @@ section {
   font-family : "roboto mono",monospace ;
   font-size: 0.9em ;
   font-weight: light;
-  margin-right: 3em;
+  margin-right: 2em;
+  padding:5px ;
+  border:2px solid var(--light-accent-color);
+  box-shadow: 5px 5px 0px 2px var(--light-accent-color);
+    white-space: nowrap;
+
 }
+
 #menu a:hover {
+    border:2px solid var(--text-color);
     color: var(--text-hover-color); 
+    background-color: var(--light-accent-color);
+    box-shadow: 0px 0px 0px 0px ;
+    transition: all 0.4s; 
 }
 
 #switch-container img {
@@ -257,6 +262,17 @@ article {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+article img {
+    height: 1em ;
+    width: 1em ;    
+    margin-right: 0.5em;
+    padding:0.5em ; 
+    background-color: white;
+    opacity: 0.5;
+    margin-bottom: 0.5em;
+    border-radius: 100px;
+}
+
 section h4 {
         font-weight: bolder;
         color:var(--text-hover-color);
@@ -267,6 +283,11 @@ article > section > ul {
     font-size: 0.9em ;
     padding-left: 1em;
     margin: -1em 0em 1em 0em ;
+}
+article li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
 }
 
 #projects-wrapper {
@@ -358,9 +379,16 @@ article > section > ul {
 }
 
 .active > * {
-
-    color:azure;
-    background-color: var(--blue-color);
+    color:var(--background-color) !important;
+    background-color: var(--text-color) !important;
+    padding: 0.5em;
+    
+    border: 2px solid var(--text-color) !important;
+    box-shadow: 1px 1px 0px 2px var(--text-color) !important;
+}
+.active > *:hover {
+    box-sizing: border-box;
+    background-color: transparent;
     padding: 0.5em;
 }
 
