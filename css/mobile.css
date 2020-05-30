@@ -8,17 +8,23 @@
             transform: translateY(-20rem)  !important;
         }
     }
-    
+
     #menu {
         display: flex;
         flex-direction: column !important;
         font-size: 1.5em ;
         white-space: pre;
+        margin-top: 0px !important;
     }
     body {
+
         position: relative;
-        top:-4em;
         width:85% !important; 
+    }
+    #switch-container img {
+        position: relative !important;
+        top:2vw  !important; 
+        right: 2vw;
     }
 
     #projects-wrapper {

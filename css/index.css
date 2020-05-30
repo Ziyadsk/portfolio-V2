@@ -90,7 +90,7 @@
         transform: translateY(20rem);
     }
     100% {
-        transform: translateY(-5rem);
+        transform: translateY(0rem);
     }
 }
 @keyframes skillSection {
@@ -116,8 +116,11 @@ html {
 body {
     color:var(--text-color);
     width:75%; 
-    margin :5em auto ; 
+    margin :0em auto ; 
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a { 
@@ -162,11 +165,13 @@ section {
 #menu {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    max-width: 50%;
+
     color :gray ; 
     animation-name: menu ; 
     animation-duration: 0.8s;
     animation-timing-function:ease-out;
+    margin-top: 10em;
 }
 
 #menu a {
@@ -195,6 +200,10 @@ section {
     cursor: pointer;
     animation: ldIcon;
     animation-duration: 1.5s;
+    position: fixed;
+    top: 1.9vw; 
+    transition : All 1s;
+    
 }
 #about-me-section{
     width:75% ;
@@ -203,26 +212,55 @@ section {
 section h2 {
     color:var(--text-title-color);
 }
+#about-me-intro-section {
+    font-size: 0.8em;
+    width: 400px;
+    opacity: 0.8;
+    margin-bottom: 2em;
+}
+
+#about-me-intro-section p{
+    margin-bottom: 2em;
+}
+
+
+#about-me-intro-section a {
+    border: 2px solid var(--text-color);
+    color: var(--text-hover-color);
+    background-color: var(--light-accent-color);
+    box-shadow: 0px 0px 0px 0px;
+    padding: 0.5em 1.5em;
+    transition: all 0.4s;
+}
+#about-me-intro-section a:hover{
+    background-color: var(--text-hover-color);
+    font-size: 1em;
+    color:var(--background-color);
+}
+
 #about-me-section a {
     display: inline-block;
-    padding: 1em;
+    padding: 0.5em;
+    font-size: 0.9em;
+    color: var(--text-hover-color);
+    background-color: var(--light-accent-color);
     box-shadow: 0px 0px 3px 1px var(--light-accent-color);
     margin: 1em 0em 0em 0em;
     opacity: 0.7;
-    box-shadow: 10px 10px 0px 5px ,
-    0px 0px 0px 5px  ;
+    box-shadow: 5px 5px 0px 3px ,
+    0px 0px 0px 3px  ;
     
 }
 #about-me-section a:hover {
     transition:all 0.4s ; 
     color:var(--background-color);
-    background-color: var(--blue-color);
-    box-shadow: 0px 0px 2px 0px ,
-    3px 3px 0px 3px  ;
+    background-color: var(--text-color);
+    box-shadow: 0px 0px 0px 0px var(--light-accent-color) ,
+    3px 3px 0px 0px var(--light-accent-color) ;
     opacity: 1;
 }
 
-.section:not(:first-child){
+.section:not(#about-me-intro-section){
     display:none;
 }
 

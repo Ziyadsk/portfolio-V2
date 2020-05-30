@@ -56,6 +56,9 @@ function displaySection(link,section) {
             for(elem of sec.parentElement.children){
                 elem.style.display = "none";
             }
+            // remove the about-me-intro
+            let aboutMeIntroSection = document.querySelector("#about-me-intro-section");
+            aboutMeIntroSection.style.display = "None";
 
             sec.classList.remove("section");
             sec.style.display = "block";
@@ -63,10 +66,16 @@ function displaySection(link,section) {
             sec.style.animationDuration = "0.6s";
             sec.style.animationFillMode = "forwards";
             
+
             let menu = document.querySelector("#menu");
+            menu.style.marginTop = "0px";
             menu.style.display = "flex";
-            menu.style.transform = "translate(23em,-8em)";
+            menu.style.position = "fixed";
+            menu.style.top = "1vw"; 
             menu.style.transition = "All 1s";
+            menu.style.marginTop="0px";
+            menu.style.right= "15vw";
+
             event.preventDefault() ;
             lnk.classList.add("active");
         }
