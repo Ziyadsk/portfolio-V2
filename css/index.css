@@ -117,7 +117,7 @@ body {
     color:var(--text-color);
     width:75%; 
     margin :0em auto ; 
-    background-color: transparent;
+    background-color:transparent ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -437,16 +437,16 @@ footer {
 
 
 #go-back-button{
+    opacity: 0.8;
     font-family: "roboto mono";
     outline : none; 
-    background-color: var(--blue-color);
+    background-color: var(--text-color);
+    color:var(--background-color);
     position: relative;
     top:-2em;
-    color:#fafafa;
     padding: 1em;
     border:none;
     display: none; 
-    border-radius: 10px;
     font-size: 0.8em;
     text-align: center ;
 } 
