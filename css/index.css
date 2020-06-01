@@ -384,10 +384,11 @@ article li {
     margin-right: 1em ;
     font-size: 0.7em ;
     opacity: 0.5;
-    padding: 0.3em ;
-    border-radius: 5px ;
+    padding: 0.3em 0.7em;
     font-family: "roboto mono";
+    
 }
+
 .tags > span:hover{
     opacity: 0.9;
 }
@@ -434,7 +435,6 @@ footer {
     position: absolute;
     bottom: 0px ;
 }
-
 
 #go-back-button{
     opacity: 0.8;

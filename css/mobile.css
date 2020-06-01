@@ -35,9 +35,8 @@
     #projects-wrapper div {
         align-items: center !important ;
         flex-direction: column;
-        margin: 0em 0em 1em 0em !important;
+        margin: 0em 0em 3em 0em !important;
         width: 97% important;
-        
     }
     
     .section{
