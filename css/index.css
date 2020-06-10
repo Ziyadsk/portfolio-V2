@@ -117,7 +117,6 @@ body {
     color:var(--text-color);
     width:75%; 
     margin :0em auto ; 
-    background-color:transparent ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -322,13 +321,11 @@ section h2 {
 article { 
     display: grid ; 
     grid-template-columns : repeat(auto-fill,minmax(18rem,0.5fr));
-    max-width:100%;
+    gap:1em; 
 
 }
 article section {
     min-width: 22em;
-    margin-right: 2em;
-    margin-bottom: 1em;
     background-color: var(--background-color);
 }
 
@@ -349,13 +346,12 @@ section h4 {
     justify-content: space-between;
     font-weight: bolder;
     color:var(--text-hover-color);
+    margin-right: 2em;
 }
 section h4 > img {
     height: 3em ;
     width: 3em;
     opacity: 0.2;
-    position: absolute;
-    margin-left: 15.5em;
     margin-top: -1em;
 }
 
