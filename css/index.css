@@ -132,16 +132,27 @@ section {
     background-color: transparent;
 }
 
-#watermark {
+.watermark:first-child {
     position: fixed;
     margin: 0em auto ;
-    font-size: 27em;
+    font-size: 10rem;
     font-weight: bolder;
     font-family: nunito ;
     opacity: 0.03;
-    right: auto;
-    left:auto;
-    transform: rotate(-353deg);
+    top :0 ;
+    left: -2em; 
+    z-index: -1000;
+}
+.watermark:nth-child(2){
+    position: fixed;
+    margin: 0em auto ;
+    font-size: 27rem;
+    font-weight: bolder;
+    font-family: nunito ;
+    opacity: 0.03;
+    overflow: hidden;
+    bottom: 0;
+    right: -1em;
     z-index: -1000;
 }
 
@@ -281,9 +292,21 @@ section h2 {
     justify-content: space-between;
 }
 
+
+#skills-section article > section { 
+    font-family: "roboto mono",monospace;
+    font-size: 0.9em;
+    font-weight: light;
+    padding: 5px;
+    border: 2px solid var(--light-accent-color);
+    box-shadow: 5px 5px 0px 2px var(--light-accent-color);
+    white-space: nowrap;
+}
+
 #links-section > div {
     margin-left: 1em;
 }
+
 #links-section > div > * {
     min-width: max-content;
     opacity: 0.5;
@@ -291,30 +314,51 @@ section h2 {
     font-weight: 700;
     font-size: 1.5em;
 }
+
 #links-section > div > *:hover {
     opacity: 1;
 }
 
 article { 
-    display: grid ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid ; 
+    grid-template-columns : repeat(auto-fill,minmax(18rem,0.5fr));
+    max-width:100%;
+
+}
+article section {
+    min-width: 22em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    background-color: var(--background-color);
 }
 
-article img {
-    height: 1em ;
-    width: 1em ;    
+article object {
+    height: 2.5em;
+    width: 1.5em;
     margin-right: 0.5em;
-    padding:0.5em ; 
-    background-color: white;
-    opacity: 0.5;
-    margin-bottom: 0.5em;
-    border-radius: 100px;
+}
+
+svg {
+    fill:blue ; 
 }
 
 section h4 {
-        font-weight: bolder;
-        color:var(--text-hover-color);
+    display: flex;
+    font-size: 1rem;
+    margin-left: 1em;
+    justify-content: space-between;
+    font-weight: bolder;
+    color:var(--text-hover-color);
 }
+section h4 > img {
+    height: 3em ;
+    width: 3em;
+    opacity: 0.2;
+    position: absolute;
+    margin-left: 15.5em;
+    margin-top: -1em;
+}
+
 article > section > ul {
 
     list-style-type: none;
@@ -353,7 +397,6 @@ article li {
     flex-direction: column;
     justify-content: space-evenly;
     padding-right: 2em;
-    
 }
 #projects-wrapper > div h3 em {
     font-size: 0.7em;
