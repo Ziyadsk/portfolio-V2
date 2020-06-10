@@ -150,8 +150,20 @@ section {
     font-family: nunito ;
     opacity: 0.03;
     overflow: hidden;
-    bottom: 0;
+    bottom: 0em;
     right: -1em;
+    z-index: -1000;
+}
+.watermark:nth-child(3){
+    position: fixed;
+    margin: 0em auto ;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: nunito ;
+    opacity: 0.03;
+    overflow: hidden;
+    bottom:0;
+    left: 0;
     z-index: -1000;
 }
 
@@ -322,8 +334,8 @@ article {
     display: grid ; 
     grid-template-columns : repeat(auto-fill,minmax(18rem,0.5fr));
     gap:1em; 
-
 }
+
 article section {
     min-width: 22em;
     background-color: var(--background-color);
@@ -349,10 +361,13 @@ section h4 {
     margin-right: 2em;
 }
 section h4 > img {
-    height: 3em ;
+    height: 3em;
     width: 3em;
     opacity: 0.2;
     margin-top: -1em;
+    box-sizing: border-box;
+    padding: 0.5em;
+    background-color: aliceblue
 }
 
 article > section > ul {
