@@ -463,7 +463,18 @@ article li {
 
 #links-section > div > * {
     margin-top: 1em;
+    box-shadow: 5px 5px 0px 2px var(--light-accent-color);
+    padding: 0.5em;
+    border:2px solid var(--light-accent-color);
 }
+#links-section > div > *:hover {
+    box-shadow: 0px 0px 0px 0px ; 
+    border:2px solid var(--text-color);
+    color: var(--text-color); 
+    background-color: var(--light-accent-color);
+    transition: all 0.4s; 
+}
+
 
 #links-section > div a i {
     color:var(--text-color); 
@@ -475,10 +486,10 @@ article li {
     color:var(--background-color) !important;
     background-color: var(--text-color) !important;
     padding: 0.5em;
-    
     border: 2px solid var(--text-color) !important;
     box-shadow: 1px 1px 0px 2px var(--text-color) !important;
 }
+
 .active > *:hover {
     box-sizing: border-box;
     background-color: transparent;
