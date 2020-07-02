@@ -322,7 +322,7 @@ section h2 {
 article {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 0.5fr));
-  gap: 1em;
+  gap: 2em;
 }
 
 article section {
@@ -348,7 +348,9 @@ section h4 {
   font-weight: bolder;
   color: var(--text-hover-color);
   margin-right: 2em;
+  margin-bottom: 2em;
 }
+
 section h4 > img {
   height: 3em;
   width: 3em;
@@ -370,6 +372,7 @@ article li {
   display: flex;
   align-items: center;
   font-size: 1.1em;
+  font-family: roboto mono;
 }
 #projects-section {
   display: flex;
